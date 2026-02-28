@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://hardik2396.github.io/sitemap.xml
