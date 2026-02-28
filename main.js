@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Scroll reveal animations ----------
   const revealElements = document.querySelectorAll(
-    '.timeline-item, .pub-card, .edu-card, .skill-category, .highlight-card, .service-tag, .contact-card'
+    '.exp-card, .pub-card, .edu-card, .stat, .contact-chip, .about-service'
   );
 
   revealElements.forEach(el => el.classList.add('reveal'));
