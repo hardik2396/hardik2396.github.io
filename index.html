@@ -26,6 +26,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#demo">Demo</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#publications">Publications</a></li>
@@ -48,8 +49,8 @@
           My work spans real-time speech, LLM post-training, audio safety, and evaluation at scale.
         </p>
         <div class="hero-cta">
-          <a href="#experience" class="btn btn-primary">See My Work</a>
-          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          <a href="#demo" class="btn btn-primary">▶ Watch the Demo</a>
+          <a href="#experience" class="btn btn-outline">See My Work</a>
         </div>
         <div class="hero-social">
           <a href="https://github.com/hardik2396" target="_blank" rel="noopener" aria-label="GitHub">
@@ -73,6 +74,25 @@
       </div>
     </div>
   </header>
+
+  <!-- ==================== FEATURED DEMO ==================== -->
+  <section class="section section-demo" id="demo">
+    <div class="container">
+      <div class="demo-badge">Featured at Microsoft Ignite 2025</div>
+      <h2 class="section-title demo-title">Microsoft 365 Copilot Voice Mode</h2>
+      <p class="demo-subtitle">I led the voice AI behind this product, from early prototype to production at million-user scale. Here it is in action.</p>
+      <div class="demo-video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/TUeET4zY95c?start=1220&end=1280&rel=0" 
+          title="Microsoft 365 Copilot Voice Mode Demo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="demo-caption">Live keynote demo from Microsoft Ignite 2025 <a href="https://www.youtube.com/watch?v=TUeET4zY95c&t=1220s" target="_blank">Watch full keynote →</a></p>
+    </div>
+  </section>
 
   <!-- ==================== ABOUT ==================== -->
   <section class="section" id="about">
@@ -178,7 +198,7 @@
               <div class="timeline-category">
                 <h4>Productization & Launch</h4>
                 <ul>
-                  <li>Led Microsoft 365 Copilot Voice Mode from early demo to production at million-user scale, co-leading real-time API productization with engineering.</li>
+                  <li>Led Microsoft 365 Copilot Voice Mode from early demo to production at million-user scale, defining model requirements and guiding real-time API integration with engineering.</li>
                 </ul>
               </div>
               <div class="timeline-category">
@@ -191,8 +211,7 @@
               <div class="timeline-category">
                 <h4>Modeling & Post-training</h4>
                 <ul>
-                  <li>Led Microsoft's first GPT-4o-based custom voice fine-tuning efforts, defining end-to-end data strategy and shipping production custom voice, featured in keynote demo at <a href="#" target="_blank">Microsoft Ignite 2025</a>.</li>
-                  <li>Drove migration from GAN-based to diffusion-based audio decoders, improving speaker fidelity, prosody consistency, and production robustness.</li>
+                  <li>Led development of diffusion-based audio decoders, improving speaker fidelity, prosody consistency, and production robustness.</li>
                   <li>Led audio post-training (SFT + RL), building datasets, reward signals, and evals to improve search triggering and various production capabilities.</li>
                 </ul>
               </div>
