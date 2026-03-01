@@ -192,6 +192,36 @@ img { max-width: 100%; display: block; }
 }
 .exp-card:hover { border-color: rgba(99,102,241,0.25); box-shadow: var(--shadow-sm); }
 .exp-main { border-left: 3px solid var(--accent); }
+
+/* Promotion badge */
+.exp-promo-badge {
+  display: inline-block; font-size: 0.72rem; font-weight: 700;
+  color: #fff; background: var(--accent-grad);
+  padding: 4px 14px; border-radius: 20px; white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.2);
+  animation: badge-glow 2s ease-in-out infinite alternate;
+}
+@keyframes badge-glow {
+  0% { box-shadow: 0 2px 8px rgba(99,102,241,0.2); }
+  100% { box-shadow: 0 2px 16px rgba(99,102,241,0.35); }
+}
+
+/* Promotion timeline */
+.exp-promo-timeline {
+  display: flex; gap: 0; margin: 12px 0 4px;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.promo-step {
+  flex: 1; padding: 10px 16px; border-right: 1px solid var(--border);
+  background: var(--bg-alt); transition: all var(--ease);
+}
+.promo-step:last-child { border-right: none; }
+.promo-step:hover { background: var(--accent-light); }
+.promo-current { background: var(--accent-light); border-bottom: 2px solid var(--accent); }
+.promo-title { display: block; font-size: 0.82rem; font-weight: 700; color: var(--text); }
+.promo-current .promo-title { color: var(--accent); }
+.promo-date { display: block; font-size: 0.68rem; color: var(--text-3); font-weight: 500; margin-top: 1px; }
 .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
 .exp-header h3 { font-size: 1rem; font-weight: 700; }
 .exp-company { font-size: 0.88rem; color: var(--accent); font-weight: 600; margin-top: 1px; }
@@ -288,6 +318,9 @@ img { max-width: 100%; display: block; }
   .demo-video { width: 100%; }
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
   .exp-row { grid-template-columns: 1fr; }
+  .exp-promo-timeline { flex-direction: column; }
+  .promo-step { border-right: none; border-bottom: 1px solid var(--border); }
+  .promo-step:last-child { border-bottom: none; }
   .pub-grid { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }
   .exp-header { flex-direction: column; gap: 6px; }
